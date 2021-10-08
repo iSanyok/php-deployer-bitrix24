@@ -2,7 +2,6 @@
 PHP рецепт для деплоера (https://github.com/deployphp/deployer), который отправляет сообщения о деплоях в Битрикс24.
 
 # Пример работы
-
 ### Настройки для уведомлений в битрикс
 set('bitrix_webhook', 'https://mybitrix.bitrix24.ru/rest/111/5w9s2qatn1xqtkve/imbot.message.add.json');
 
