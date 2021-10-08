@@ -3,8 +3,7 @@ PHP рецепт для деплоера (https://github.com/deployphp/deployer)
 
 # Пример работы
 
-// Настройки для уведомлений в битрикс
-
+### Настройки для уведомлений в битрикс
 set('bitrix_webhook', 'https://mybitrix.bitrix24.ru/rest/111/5w9s2qatn1xqtkve/imbot.message.add.json');
 
 set('bitrix_bot_id', 1111);
@@ -14,8 +13,7 @@ set('bitrix_client_id', 'q94zphhebaob8h1yymwzs3xun69gpkf6');
 set('bitrix_chat_id', 'chat11111');
 
 
-// Сообщения в битрикс
-
+### Сообщения в битрикс
 set('bitrix_text', 'Запустили деплой на сервер.');
 
 set('bitrix_success_text', 'Деплой на сервер успешно завершён.');
@@ -23,8 +21,7 @@ set('bitrix_success_text', 'Деплой на сервер успешно зав
 set('bitrix_failure_text', 'Деплой на сервер не удался.');
 
 
-// Bitrix24
-
+### Запуск отправки сообщений
 before('deploy:prepare', 'bitrix:notify');
 
 after('success', 'bitrix:notify:success');
