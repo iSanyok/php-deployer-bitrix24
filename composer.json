@@ -1,0 +1,7 @@
+{
+    "name": "iSanyok/php-deployer-bitrix24",
+    "description": "PHP receipt for deployer that sending messages about deploys to Bitrix24",
+    "require": {
+        "php": ">=7.4"
+    }
+}
